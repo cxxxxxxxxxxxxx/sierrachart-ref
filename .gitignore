@@ -16,6 +16,9 @@
 # Allow gitignore
 !.gitignore
 
+# Allow README
+!README.md
+
 # Allow source sync script
 !sync_sierra.sh
 
