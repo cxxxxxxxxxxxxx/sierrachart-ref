@@ -17,7 +17,7 @@
 #pragma endregion
 
 //
-// 04/26/2023 - Compiled using Sierra Chart: 2496
+// 05/04/2023 - Compiled using Sierra Chart: 2497
 //
 
 //
@@ -25,10 +25,6 @@
 //
 #pragma region Custom Study Notes
 //
-// Current Studies Version: 2497
-// Last Updated: 05/02/2023
-//
-// 
 // Forex Factory
 // 
 // Study requires compiling with nlohmann json which is an external header file
@@ -44,23 +40,29 @@
 // And also a test in organizing Inputs/Graphs/Persistent vars into enums to easily add/remove/re-order
 // Learning more on C++ there are probably better ways such as namespaces/classes/etc... but for now...
 //
-// 11/1/2022
+// 05/04/2023 
+// YT @VerrilloTrading / Twitter @VerrilloTrading
+// Mentioned a while back in Discord that unloading study via UDP would crash Sierra
+// I tried to replicate this today but unable to. Used Python to unload/re-load the studies with no crashes.
+// So maybe it was an issue with previous version of Sierra? Tested with 2497.
+//
+// 11/01/2022
 // ADDED: Option to disable logging http request data to the logs. Set to off by default. Updated messages to use 0 instead of 1 to not pop up window
 // 
-// 9/1/2022
+// 09/01/2022
 // FIXED: Bug where tomorrow's events wouldn't show up if last day of month
 // 
-// 8/18/2022
+// 08/18/2022
 // ADDED: Header for Today's Events so if no events or no more events for today you can still see the study is working
 // ADDED: OpenGL check so if OpenGL is enabled it will provide a warning
 // 
-// 7/13/2022
+// 07/13/2022
 // ADDED: Setting for Showing of Tomorrow's Events at/after a specified time
 //
-// 7/15/2022
+// 07/15/2022
 // ADDED: Option to show Forecast / Previous in event title. Forgot about this previously :)
 //
-// 6/29/2022
+// 06/29/2022
 // ADDED: Showing of Tomorrow's events
 // ADDED: The 'All' currency to show things like G7, OPEC, etc...
 //
@@ -81,7 +83,7 @@
 // Fair Value Gap
 //
 // TODO: Review Hide Logic to decrease amount of FVG's stored if we are not showing them at all, do we need them stored?
-// 7/22/2022
+// 07/22/2022
 // Updated Default settings
 // - Vertical Offset to account for chart trading and not covering up trade positions
 // - Set line default value to 1 as assuming most people want to see the outline by default
@@ -95,12 +97,12 @@
 // - Add option to remove FVG as soon as candle goes through it instead of waiting for candle close
 // 
 // 
-// 7/15/2022
+// 07/15/2022
 // ADDED: Line Style for FVG's. Helps when overlaying from different time frames to use different styles for each
 //
 // Updated Default settings to use 1 as line width to show lines by default
 //
-// 7/14/2022
+// 07/14/2022
 // Updated default settings to allow copy to other charts by default
 
 //
@@ -109,7 +111,7 @@
 // This functionality was from a feature requested and added recently 3/15/2022
 // https://www.sierrachart.com/SupportBoard.php?ThreadID=71671
 //
-// 8/18/2022
+// 08/18/2022
 // ADDED: Three additional sessions
 // ADDED: Per session traded volume clearing
 
